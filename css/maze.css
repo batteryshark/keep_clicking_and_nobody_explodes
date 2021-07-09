@@ -1,0 +1,67 @@
+#mazeTable {
+    border: 1px solid #fff;
+}
+
+#mazeDirections {   
+    font-size: 25px;
+    color: #fff;
+}
+
+#mazeTable td {
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+	cursor: none;
+}
+
+.mazeDot {
+    position: absolute;
+    top: -2px;
+    left: 10px;
+}
+
+.mazeCircle {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 3px;
+}
+
+.mazeCell.start-stop:hover {
+    background-color: #00ff00;
+}
+
+.mazeCell.start-marker {
+    background-color: #33ee33;
+}
+
+.mazeCell.stop-marker {
+    background-color: #ee3333;
+}
+
+.mazeCell.path-segment {
+    color: #444488;
+}
+
+.mazeCell.start-stop.place-stop:hover {
+    background-color: red;
+}
+
+.mazeCell:hover .mazeCircle {
+    display: block;
+    color: #2211aa;
+}
+
+.mazeCell.start-stop:hover .mazeCircle {
+    display: none;
+}
+
+.mazeCell.placed .mazeCircle {
+    color: #fff;
+    display: block;
+}
